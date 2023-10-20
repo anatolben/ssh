@@ -1,11 +1,12 @@
 name: CI
-on: [push]
+on:
+  - push
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: valeriangalliat/action-sshd-cloudflared@v1
+      - uses: actions/checkout@v2
+      - uses: valeriangalliat/action-sshd-cloudflared@v2
     #- name: Setup upterm session
     #  uses: lhotari/action-upterm@v1
 
