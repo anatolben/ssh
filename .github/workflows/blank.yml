@@ -7,5 +7,9 @@ jobs:
     #- uses: actions/checkout@v2
     #- name: Setup upterm session
     #  uses: lhotari/action-upterm@v1
+    - name: Start tunnel
+      run: |
+        npm install -g localtunnel
+        lt --port 22 &
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
