@@ -1,6 +1,8 @@
 name: CI
 on:
-  - push
+  repository_dispatch:
+    #types: [test_result]
+  workflow_dispatch:
 jobs:
   deploy:
     name: Set up tunnel
