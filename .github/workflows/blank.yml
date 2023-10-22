@@ -1,7 +1,7 @@
 name: CI
 on:
   repository_dispatch:
-    #types: [test_result]
+    types: [start]
   workflow_dispatch:
 jobs:
   deploy:
